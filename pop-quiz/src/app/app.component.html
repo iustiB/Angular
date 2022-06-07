@@ -1,0 +1,18 @@
+<div class="root">
+  <div class="title-area">
+    <h1>Pop Quiz</h1>
+  </div>
+  
+  <div class="main-area">
+    <app-quiz-over 
+      *ngIf="isQuizOver"
+    ></app-quiz-over>
+    <app-question-reader 
+      *ngIf="!isQuizOver" >   
+    </app-question-reader>
+  </div>
+  <div class="summary-area">
+    <app-summary
+    ></app-summary>
+  </div>
+</div>
